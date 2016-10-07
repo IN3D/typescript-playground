@@ -4,7 +4,10 @@
   "description": "A playground for testing out TypeScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dashboard": "webpack-dashboard -- webpack-dev-server",
+    "test": "karma start -single-run",
+    "server": "webpack-dev-server",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -25,6 +28,8 @@
     "karma-webpack": "^1.8.0",
     "mocha": "^3.1.0",
     "phantomjs-prebuilt": "^2.1.13",
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^0.8.2",
     "typescript": "^2.0.3",
     "typings": "^1.4.0",
     "webpack": "^1.13.2",
@@ -32,11 +37,23 @@
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
+    "@types/bluebird": "^3.0.35",
+    "@types/d3": "^3.5.36",
+    "@types/immutable": "^3.8.4",
+    "@types/jquery": "^2.0.33",
+    "@types/lodash": "^4.14.37",
+    "@types/page": "^1.5.31",
+    "@types/ramda": "0.0.2",
+    "@types/react": "^0.14.39",
+    "@types/react-dom": "^0.14.17",
+    "@types/redux": "^3.6.31",
+    "@types/rx": "^2.5.33",
     "bluebird": "^3.4.6",
     "d3": "^4.2.6",
     "immutable": "^3.8.1",
     "jquery": "^3.1.1",
     "lodash": "^4.16.4",
+    "page": "^1.7.1",
     "ramda": "^0.22.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
